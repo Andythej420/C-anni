@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i=0;i<10;i+=2){
+        cout<<i<<endl;
+    }
+
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i=0;i<5;i++){
+        cout<<"Anjaneya"<<endl;
+    }
+
+
+    return 0;
+}
+
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string password;
+    string user_pass;
+int flag=0;
+
+while (flag==0){
+    cout<<"enter password to be  created.\n";
+    cin>>password;
+    
+    if (password.length()>=6){
+        cout<<"password created.\n";
+        flag=1;
+    }
+  
+
+else{
+    cout<<"password Invalid.Try again.\n";
+    
+}
+}
+
+
+int tries = 0;
+while(true){
+    if(tries ==3){
+        cout<<"Incorect tries account locked";
+        return false;
+    }
+    while(tries<3){
+        
+    
+        cout<<"enter password:  ";
+        cin>>user_pass;
+        if(user_pass == password){
+            cout<<"correct password";
+            return false;
+            
+        }
+        else{
+            cout<<"Incoreeecrt password .try again\n";
+            tries++;
+        }
+    }
+}
+
+    return 0;
+}
+
